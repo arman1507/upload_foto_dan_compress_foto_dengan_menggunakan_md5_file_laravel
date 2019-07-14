@@ -18,6 +18,7 @@ class CreateModelMahasiswasTable extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->string('file');
+            $table->string('md5');
             $table->timestamps();
         });
     }

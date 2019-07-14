@@ -28,7 +28,11 @@
                         <td>{{ $no++ }}</td>
                         <td>{{ $datas->nama }}</td>
                         <td>{{ $datas->alamat }}</td>
-                        <td><a href="{{ url('uploads/file/'.$datas->file) }}" > {{$datas->file}}</a></td></td>
+                        @if(md5($datas->file) == $datas->md5)
+                        <td><a href="{{ url('uploads/file/'.$datas->file) }}" > {{$datas->file}}</a></td>
+                        @else
+                        {<td>data sudah diganti</td>}
+                        @endif</td>
                         <td>
                             <form action="{{ route('mahasiswa.destroy', $datas->id) }}" method="post">
                                 {{ csrf_field() }}

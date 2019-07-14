@@ -8,20 +8,20 @@
             <h1>Anak IT -  Edit mahasiswa</h1>
             <hr>
             @foreach($data as $datas)
-            <form action="{{ route('mahasiswa.update', $datas->id) }}" method="post">
+            <form enctype="multipart/form-data" action="{{ route('mahasiswa.update', $datas->id) }}" method="post">
                 {{ csrf_field() }}
                 {{ method_field('PUT') }}
                 <div class="form-group">
                     <label for="nama">Nama:</label>
-                    <input type="text" class="form-control" id="usr" name="nama" value="{{ $datas->nama }}">
+                    <input type="text" class="form-control" id="usr" name="nama">
                 </div>
                 <div class="form-group">
-                    <label for="kelas">alamat:</label>
-                    <input type="text" class="form-control" id="alamat" name="alamat" value="{{ $datas->alamat }}">
+                    <label for="nama">alamat:</label>
+                    <input type="text" class="form-control" id="usr" name="alamat">
                 </div>
                 <div class="form-group">
-                    <label for="no_hp">File:</label>
-                    <input type="file" class="form-control" id="file" name="file" value="{{ $datas->file }}">
+                    <label for="email">File:</label>
+                    <input type="file" class="form-control" id="email" name="file">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>
