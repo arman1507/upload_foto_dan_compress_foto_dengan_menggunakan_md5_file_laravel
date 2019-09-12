@@ -27,12 +27,17 @@ class ComposerStaticInite98a1e60582d6e56200f8abffa5e0d8a
     );
 
     public static $prefixLengthsPsr4 = array (
+        't' => 
+        array (
+            'thiagoalessio\\TesseractOCR\\' => 27,
+        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
         'Y' => 
         array (
+            'Yk\\LaravelOcr\\' => 14,
             'Yajra\\DataTables\\' => 17,
         ),
         'X' => 
@@ -147,15 +152,24 @@ class ComposerStaticInite98a1e60582d6e56200f8abffa5e0d8a
         'A' => 
         array (
             'App\\' => 4,
+            'Alimranahmed\\LaraOCR\\' => 21,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'thiagoalessio\\TesseractOCR\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'Yk\\LaravelOcr\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yk/laravel-ocr/src',
         ),
         'Yajra\\DataTables\\' => 
         array (
@@ -385,6 +399,10 @@ class ComposerStaticInite98a1e60582d6e56200f8abffa5e0d8a
         array (
             0 => __DIR__ . '/../..' . '/app',
         ),
+        'Alimranahmed\\LaraOCR\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/alimranahmed/laraocr/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -409,6 +427,13 @@ class ComposerStaticInite98a1e60582d6e56200f8abffa5e0d8a
     );
 
     public static $classMap = array (
+        'Alimranahmed\\LaraOCR\\Commands\\ImageParsing' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/Commands/ImageParsing.php',
+        'Alimranahmed\\LaraOCR\\Controllers\\OcrController' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/Controllers/OcrController.php',
+        'Alimranahmed\\LaraOCR\\Facades\\OCR' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/Facades/OCR.php',
+        'Alimranahmed\\LaraOCR\\LaraOCRServiceProvider' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/LaraOCRServiceProvider.php',
+        'Alimranahmed\\LaraOCR\\Services\\OcrAbstract' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/Services/OcrAbstract.php',
+        'Alimranahmed\\LaraOCR\\Services\\Shell' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/Services/Shell.php',
+        'Alimranahmed\\LaraOCR\\Services\\Tesseract' => __DIR__ . '/..' . '/alimranahmed/laraocr/src/Services/Tesseract.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -4142,6 +4167,9 @@ class ComposerStaticInite98a1e60582d6e56200f8abffa5e0d8a
         'Yajra\\DataTables\\Utilities\\Config' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Config.php',
         'Yajra\\DataTables\\Utilities\\Helper' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Helper.php',
         'Yajra\\DataTables\\Utilities\\Request' => __DIR__ . '/..' . '/yajra/laravel-datatables-oracle/src/Utilities/Request.php',
+        'Yk\\LaravelOcr\\Classes\\Ocr' => __DIR__ . '/..' . '/yk/laravel-ocr/src/Classes/Ocr.php',
+        'Yk\\LaravelOcr\\Facades\\Ocr' => __DIR__ . '/..' . '/yk/laravel-ocr/src/Facades/Ocr.php',
+        'Yk\\LaravelOcr\\OcrProvider' => __DIR__ . '/..' . '/yk/laravel-ocr/src/OcrProvider.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -4210,6 +4238,13 @@ class ComposerStaticInite98a1e60582d6e56200f8abffa5e0d8a
         'phpDocumentor\\Reflection\\Types\\String_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/String_.php',
         'phpDocumentor\\Reflection\\Types\\This' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/This.php',
         'phpDocumentor\\Reflection\\Types\\Void_' => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+        'thiagoalessio\\TesseractOCR\\Command' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/Command.php',
+        'thiagoalessio\\TesseractOCR\\FriendlyErrors' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
+        'thiagoalessio\\TesseractOCR\\ImageNotFoundException' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
+        'thiagoalessio\\TesseractOCR\\Option' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/Option.php',
+        'thiagoalessio\\TesseractOCR\\TesseractNotFoundException' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
+        'thiagoalessio\\TesseractOCR\\TesseractOCR' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/TesseractOCR.php',
+        'thiagoalessio\\TesseractOCR\\UnsuccessfulCommandException' => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

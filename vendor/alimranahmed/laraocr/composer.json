@@ -1,0 +1,39 @@
+{
+    "name": "alimranahmed/laraocr",
+    "type": "library",
+    "keywords": ["ocr", "image", "data"],
+    "description": "Laravel Optical Character Reader(OCR) package using different OCR engines like Tesseract",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Al Imran Ahmed",
+            "email": "al.imran.cse@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alimranahmed\\LaraOCR\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alimranahmed\\LaraOCR\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alimranahmed\\LaraOCR\\LaraOCRServiceProvider"
+            ],
+            "aliases": {
+                "OCR": "Alimranahmed\\LaraOCR\\Facades\\OCR"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}

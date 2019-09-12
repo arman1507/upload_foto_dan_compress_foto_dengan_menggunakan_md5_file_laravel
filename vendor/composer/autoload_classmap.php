@@ -6,6 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Alimranahmed\\LaraOCR\\Commands\\ImageParsing' => $vendorDir . '/alimranahmed/laraocr/src/Commands/ImageParsing.php',
+    'Alimranahmed\\LaraOCR\\Controllers\\OcrController' => $vendorDir . '/alimranahmed/laraocr/src/Controllers/OcrController.php',
+    'Alimranahmed\\LaraOCR\\Facades\\OCR' => $vendorDir . '/alimranahmed/laraocr/src/Facades/OCR.php',
+    'Alimranahmed\\LaraOCR\\LaraOCRServiceProvider' => $vendorDir . '/alimranahmed/laraocr/src/LaraOCRServiceProvider.php',
+    'Alimranahmed\\LaraOCR\\Services\\OcrAbstract' => $vendorDir . '/alimranahmed/laraocr/src/Services/OcrAbstract.php',
+    'Alimranahmed\\LaraOCR\\Services\\Shell' => $vendorDir . '/alimranahmed/laraocr/src/Services/Shell.php',
+    'Alimranahmed\\LaraOCR\\Services\\Tesseract' => $vendorDir . '/alimranahmed/laraocr/src/Services/Tesseract.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -3739,6 +3746,9 @@ return array(
     'Yajra\\DataTables\\Utilities\\Config' => $vendorDir . '/yajra/laravel-datatables-oracle/src/Utilities/Config.php',
     'Yajra\\DataTables\\Utilities\\Helper' => $vendorDir . '/yajra/laravel-datatables-oracle/src/Utilities/Helper.php',
     'Yajra\\DataTables\\Utilities\\Request' => $vendorDir . '/yajra/laravel-datatables-oracle/src/Utilities/Request.php',
+    'Yk\\LaravelOcr\\Classes\\Ocr' => $vendorDir . '/yk/laravel-ocr/src/Classes/Ocr.php',
+    'Yk\\LaravelOcr\\Facades\\Ocr' => $vendorDir . '/yk/laravel-ocr/src/Facades/Ocr.php',
+    'Yk\\LaravelOcr\\OcrProvider' => $vendorDir . '/yk/laravel-ocr/src/OcrProvider.php',
     'phpDocumentor\\Reflection\\DocBlock' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
     'phpDocumentor\\Reflection\\DocBlockFactory' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
     'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => $vendorDir . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
@@ -3807,4 +3817,11 @@ return array(
     'phpDocumentor\\Reflection\\Types\\String_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/String_.php',
     'phpDocumentor\\Reflection\\Types\\This' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/This.php',
     'phpDocumentor\\Reflection\\Types\\Void_' => $vendorDir . '/phpdocumentor/type-resolver/src/Types/Void_.php',
+    'thiagoalessio\\TesseractOCR\\Command' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/Command.php',
+    'thiagoalessio\\TesseractOCR\\FriendlyErrors' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
+    'thiagoalessio\\TesseractOCR\\ImageNotFoundException' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
+    'thiagoalessio\\TesseractOCR\\Option' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/Option.php',
+    'thiagoalessio\\TesseractOCR\\TesseractNotFoundException' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
+    'thiagoalessio\\TesseractOCR\\TesseractOCR' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/TesseractOCR.php',
+    'thiagoalessio\\TesseractOCR\\UnsuccessfulCommandException' => $vendorDir . '/thiagoalessio/tesseract_ocr/src/FriendlyErrors.php',
 );

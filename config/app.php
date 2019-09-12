@@ -139,6 +139,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Yk\LaravelOcr\OcrProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
@@ -162,6 +163,9 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+
+
 
         /*
          * Package Service Providers...
@@ -190,7 +194,9 @@ return [
     */
 
     'aliases' => [
+        'Image' => Intervention\Image\ImageManagerStatic::class,
 
+        'Ocr' => Yk\LaravelOcr\Facades\Ocr::class,
         'Datatables' => Yajra\Datatables\Facades\Datatables::class,
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,

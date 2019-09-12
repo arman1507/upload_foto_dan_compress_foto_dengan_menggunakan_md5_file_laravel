@@ -4,8 +4,62 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d2fac25ad1495791c35afb59af46931",
+    "content-hash": "79dee48e65bdbba48a010fa5706cf539",
     "packages": [
+        {
+            "name": "alimranahmed/laraocr",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alimranahmed/LaraOCR.git",
+                "reference": "84f5202b5acc5370316ddb398ee31dd57b1503f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alimranahmed/LaraOCR/zipball/84f5202b5acc5370316ddb398ee31dd57b1503f5",
+                "reference": "84f5202b5acc5370316ddb398ee31dd57b1503f5",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Alimranahmed\\LaraOCR\\LaraOCRServiceProvider"
+                    ],
+                    "aliases": {
+                        "OCR": "Alimranahmed\\LaraOCR\\Facades\\OCR"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Alimranahmed\\LaraOCR\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Al Imran Ahmed",
+                    "email": "al.imran.cse@gmail.com"
+                }
+            ],
+            "description": "Laravel Optical Character Reader(OCR) package using different OCR engines like Tesseract",
+            "keywords": [
+                "OCR",
+                "data",
+                "image"
+            ],
+            "time": "2018-10-17T12:23:26+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -3008,6 +3062,51 @@
             "time": "2019-06-17T17:37:00+00:00"
         },
         {
+            "name": "thiagoalessio/tesseract_ocr",
+            "version": "2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thiagoalessio/tesseract-ocr-for-php.git",
+                "reference": "01602bf74872a0cd0ed2d93b1ec972f0ee2ca50a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thiagoalessio/tesseract-ocr-for-php/zipball/01602bf74872a0cd0ed2d93b1ec972f0ee2ca50a",
+                "reference": "01602bf74872a0cd0ed2d93b1ec972f0ee2ca50a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0"
+            },
+            "require-dev": {
+                "codacy/coverage": "dev-master",
+                "phpunit/php-code-coverage": "^2.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "thiagoalessio\\TesseractOCR\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "thiagoalessio",
+                    "email": "thiagoalessio@me.com"
+                }
+            ],
+            "description": "A wrapper to work with Tesseract OCR inside PHP.",
+            "keywords": [
+                "OCR",
+                "Tesseract",
+                "text recognition"
+            ],
+            "time": "2019-07-01T18:26:57+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.1",
             "source": {
@@ -3176,6 +3275,51 @@
                 "laravel"
             ],
             "time": "2019-06-12T05:06:59+00:00"
+        },
+        {
+            "name": "yk/laravel-ocr",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yassine-khachlek/laravel-ocr.git",
+                "reference": "abf03a3f25215503a352723f7986fae407ff907c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yassine-khachlek/laravel-ocr/zipball/abf03a3f25215503a352723f7986fae407ff907c",
+                "reference": "abf03a3f25215503a352723f7986fae407ff907c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "psr-4": {
+                    "Yk\\LaravelOcr\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Yassine Khachlek",
+                    "email": "yassine.khachlek@gmail.com"
+                }
+            ],
+            "description": "A wrapper for gocr.",
+            "homepage": "https://github.com/yassine-khachlek/laravel-ocr",
+            "keywords": [
+                "OCR",
+                "gocr",
+                "image",
+                "laravel",
+                "recognition",
+                "text"
+            ],
+            "time": "2016-11-05T04:36:58+00:00"
         }
     ],
     "packages-dev": [

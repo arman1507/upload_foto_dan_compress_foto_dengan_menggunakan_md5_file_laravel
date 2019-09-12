@@ -10,6 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+use thiagoalessio\TesseractOCR\TesseractOCR;
+Route::get('/coba', function(){echo \OCR::scan('uploads/file/phone.png');});
 Route::get('users', 'UsersController@index');
 Route::get('/c-u','CompressUpload_C@default')->name('c-u');
 Route::post('/c-u/upload','CompressUpload_C@upload');
@@ -22,6 +24,9 @@ Route::resource('mahasiswa','Mahasiswa');
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/halaman-kedua', function () {
-    return view('halamandua');
+Route::get('/ocr', function () {
+    return view('lara_ocr.upload_image');
+});
+Route::post('/text', function () {
+    return view('lara_ocr.parsed_text');
 });
